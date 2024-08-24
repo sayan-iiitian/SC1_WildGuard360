@@ -1,0 +1,77 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #F0F4F8; */
+  background-color: #ECF6DB;
+  color: #333;
+}
+
+.jumbotron {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3e2ce);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #08460e;
+  font-weight: 600;
+}
+
+.jumbotron p {
+  color: #495b4d;
+}
+
+#main-map, #map-input {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1.5px black solid;
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 10px 15px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  border-color: #88c9bf;
+  box-shadow: 0 0 5px rgba(136, 201, 191, 0.5);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-window {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-window img {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.containermisspet{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
