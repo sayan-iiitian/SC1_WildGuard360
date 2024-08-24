@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.full-width-img {
+    width: 100%; /* Make the image cover the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    height: 500px; /* Remove default inline spacing */
+    margin: 0px;
+  }
+  .info-text-home{
+    background-color: #F9F7F2;
+    padding: 20px;
+  }
+  .heading{
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0E6718;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+  }
+  .h{
+    margin-left: 420px;
+    color: green;
+    margin-top: 0px;
+   
+  }
+  .info-text{
+    background-color: #F9F7F2;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  /* .info{
+    background-color: lightgreen;
+  } */
