@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.news-box {
+  position: relative;
+  bottom: 20px;  /* Adjust as needed */
+  right: 20px;   /* Adjust as needed */
+  width: 600px;  /* Adjust as needed */
+  height: 450px; /* Adjust as needed */
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  margin: auto;
+  /* font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+.content h1 {
+  /* font-size: 18px;
+  margin-bottom: 10px; */
+  text-align: center;
+  font-family: "Alike", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.news-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.news-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-card {
+  flex: 0 0 33%;
+  margin: 0 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  text-align: center;
+}
+
+.news-card.focused {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.news-card.blurred {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 0;
+}
+
+.next-btn {
+  position: absolute;
+  right: 0;
+}

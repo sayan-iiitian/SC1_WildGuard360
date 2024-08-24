@@ -1,0 +1,109 @@
+.detect-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url('../images/detect1.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .detect-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust this value to control the overlay darkness */
+    z-index: 1;
+  }
+  
+
+  
+
+  
+  .box3, .box4,.box5 {
+   display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+     margin-top: 80px;
+    height: 200px;
+    width: 70%;
+   
+  }
+  
+  .box3 {
+    flex-direction: row;
+    background-color: rgba(0, 0, 255, 0.529);
+  }
+  
+  .box4 {
+    flex-direction: row-reverse;
+    background-color: rgba(240, 128, 128, 0.322);
+  }
+  .box5 {
+    flex-direction: row;
+    background-color: rgba(153, 205, 50, 0.638);
+  }
+  .wildlife-image {
+    height: 240px;
+    width: 400px;
+  
+    border-radius: 400px;
+    margin-left: -18px;
+
+  }
+  .wildlife{
+    height: 240px;
+    width: 400px;
+  
+    border-radius: 400px;
+    margin-right: -18px;
+
+  }
+  
+  .text {
+    max-width: 60%;
+    padding: 10px;
+  }
+  
+  #box-head {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: green;
+    margin-left:60px;
+  }
+
+  
+
+  
+  .learn-more-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding-right: 10px;
+    margin-right: 160px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #218838;
+  }
+   
+  
+  

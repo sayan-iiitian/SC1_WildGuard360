@@ -1,0 +1,72 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.navbar {
+    background-color: #DBEDBF;
+    /* padding: 10px 20px; */
+    width: 100%; /* Make the navbar span the full width of its container */
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 10px;
+    height: 70px;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-right: 60px;
+    /* margin-top: 15px; */
+    color: #0E6718;
+    text-decoration: none;
+
+  }
+  .navbar-links a {
+    color: #0E6718;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #70de51;
+    transform: translateY(3px); /* A slight lift on hover */
+}
+.login{
+    margin-right: 20px;
+    background-color: #0E6718; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 30px; /* Rounded corners */
+    border: none; /* No border */
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+.login-link {
+  background-color: #0E6718; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /*Button padding */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  background-color: #0b5213; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+.loginul{
+  list-style: none;
+  padding-left: 0px;
+}
+  
