@@ -9,17 +9,20 @@ const petReportSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email:{
+    type: String,
+    required: true,
+  },
   petName: {
     type: String,
-    required: true
   },
   petType: {
     type: String,
-    required: true
+    required: true,
   },
   petAge: {
     type: Number,
-    required: true
+    
   },
   petImage: {
     type: String,
@@ -32,9 +35,15 @@ const petReportSchema = new mongoose.Schema({
   coordinates: {
     type: [Number],
     required: true
+  },
+  status: { // Added status field
+    type: String,
+    enum: ['Lost', 'Found'], // Limit values to 'Lost' or 'Found'
+    required: true
   }
 });
 
 const PetReport = mongoose.model('PetReport', petReportSchema);
 
 export default PetReport;
+
