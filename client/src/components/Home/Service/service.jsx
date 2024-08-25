@@ -1,87 +1,3 @@
-// import React from 'react';
-// import './css/service.css';
-// import img1 from './images/service1.jpeg';
-// import img2 from './images/service5.jpeg';
-// import img3 from './images/service6.jpeg';
-// import img4 from './images/service4.jpeg';
-// import img5 from './images/service7.jpeg';
-// import WildlifeNews from './WildlifeNews';
-// const Service = () => {
-//   return (
-//     <div className='service-container'>
-//       <h1>OUR SERVICE</h1>
-//       <div className='service'>
-//         <div className="text-container">
-//           <p id="he">Detect Animals  </p>
-//           <p>
-//           Utilize Wildguard360's cutting-edge technology to detect animals through photo and sound for effective monitoring and protection.
-//           </p>
-//           <button className="learn-more-btn">Check &rarr;</button>
-//         </div>
-//         <img src={img1} alt="Animal Detection" />
-//       </div>
-
-//       <div className='service reverse'>
-//         <div className="text-container">
-//           <p id="her">Skin Diseases of Animals</p>
-//           <p>
-//           Learn about common skin diseases in animals and how Wildguard360 provides diagnosis and treatment to ensure their well-being.
-//           </p>
-//           <button className="learn-more-btn">Check &rarr;</button>
-//         </div>
-//         <img src={img4} alt="Bird Sound Detection" />
-//       </div>
-
-//       <div className='service'>
-//         <div className="text-container">
-//           <p id="he">NGO Rescue</p>
-//           <p>
-//           Partner with Wildguard360's NGO Rescue program to save and rehabilitate vulnerable wildlife through coordinated rescue operations and expert care.
-//           </p>
-//           <button className="learn-more-btn">Check &rarr;</button>
-//         </div>
-//         <img src={img2} alt="Snakes Information" />
-//       </div>
-
-//       <div className='service reverse'>
-//         <div className="text-container">
-//           <p id="her"> Find My Missing Pet</p>
-//           <p>
-//           Locate your lost pet quickly and efficiently with Wildguard360's advanced animal detection and tracking technology.
-//           </p>
-//           <button className="learn-more-btn">Check &rarr;</button>
-//         </div>
-//         <img src={img3} alt="Animal Skin Diseases" />
-//       </div>
-//       <div className='service'>
-//         <div className="text-container">
-//           <p id="he">Donation</p>
-//           <p>
-//           Support our mission in protecting wildlife by donating to Wildguard360, where every contribution helps us rescue, rehabilitate, and preserve endangered species.
-//           </p>
-//           <button className="learn-more-btn">Check &rarr;</button>
-//         </div>
-//         <img src={img5} alt="Snakes Information" />
-//       </div>
-
-//       <div className='nature-news-container'>
-//       <div className="content">
-//         <h1>NATURE NEWS</h1>
-//         <div className="box-container">
-//           <div className="box box4"></div>
-//           <div className="box box-center"><WildlifeNews /></div>
-//           <div className="box box3"></div>
-//         </div>
-//          {/* <img src={img5} alt="Nature Image" className="image-left" />  */}
-//       </div>
-//     </div>
-        
-//       </div>
-  
-//   );
-// }
-
-// export default Service;
 
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -91,14 +7,24 @@ import img2 from './images/service5.jpeg';
 import img3 from './images/service6.jpeg';
 import img4 from './images/service4.jpeg';
 import img5 from './images/service7.jpeg';
-import WildlifeNews from '../../WildlifeNews';
-// import MissingPet from './MissingPet';
+import img6 from './images/Keelback-img.webp';
+import img7 from './images/bird.avif';
+import img8 from './images/vets.webp';
+import img9 from './images/chatbox.avif';
+import img10 from './images/disease1.jpg';
+import img11 from './images/disease2.avif';
+import WildlifeNews from './WildlifeNews';
+import Footer from './Footer/footer';
 
 const Service = () => {
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
-    navigate(path);
+    if (path.startsWith('http')) {
+      window.location.href = path; // For external links
+    } else {
+      navigate(path); // For internal links
+    }
   };
 
   const serviceRefs = useRef([]);
@@ -132,17 +58,13 @@ const Service = () => {
   return (
     <>
       <div className='service-container'>
-        <h1 className='title'>OUR SERVICE</h1>
+        
         <div className='service-con'>
-          {[
-            {
-              title: 'Detect Animals through Picture',
-              description:
-                'Detecting animals through pictures involves using software to analyze photos and identify the animals in them. As a user, you upload a photo of an animal into the software, which then quickly analyzes the image to provide accurate identification and naming of the animal.',
-              img: img1,
-              alt: 'Animal Detection',
-              path: './detect',
-            },
+          <h1 className='title'>OUR SERVICE</h1>
+          {
+            
+          [
+            
             {
               title: 'Find My Missing Pet',
               description:
@@ -158,16 +80,7 @@ const Service = () => {
                 'Partner with Wildguard360 s NGO Rescue program to save and rehabilitate vulnerable wildlife through coordinated rescue operations and expert care.',
               img: img2,
               alt: 'Snakes Information',
-              path:'./'
-            },
-            {
-              title: 'Skin Diseases of Animals',
-              description:
-                'Detecting skin diseases in animals involves identifying abnormal skin conditions through visual inspection, diagnostic tests, and possibly AI-powered image analysis.',
-              img: img4,
-              alt: 'Animal Skin Diseases',
-              reverse: true,
-              path:'./'
+              path:'./mgo'
             },
             {
               title: 'Donation',
@@ -175,8 +88,63 @@ const Service = () => {
                 'Support our mission in protecting wildlife by donating to Wildguard360, where every contribution helps us rescue, rehabilitate, and preserve endangered species.',
               img: img5,
               alt: 'Donation',
+              reverse: true,
               path:'./donation'
             },
+            {
+              title: 'Skin Diseases of Animals',
+              description:
+                'Detecting skin diseases in animals involves identifying abnormal skin conditions through visual inspection, diagnostic tests, and possibly AI-powered image analysis.',
+              img: img4,
+              alt: 'Animal Skin Diseases',
+              // reverse: true,
+              path:'./'
+            },
+            
+            {
+              title: 'Snake Classifier',
+              description:
+                'Support our mission in protecting wildlife by donating to Wildguard360, where every contribution helps us rescue, rehabilitate, and preserve endangered species.',
+              img: img6,
+              reverse:true,
+              alt: 'Snake Classifier',
+              path:'./snakeclassification'
+            },
+            {
+              title: 'Nearest Vets',
+              description:
+                'Find the nearest animal hospitals and vets quickly with Wildguard360’s location-based services.',
+              img: img8,
+              // reverse:true,
+              alt: 'Nearest Vets',
+              path:'https://www.google.com/maps/search/animal+hospitals/@${position.coords.latitude},${position.coords.longitude},12z/data=!3m1!4b1!4m2!2m1!6e2' // External link
+            },
+            {
+              title: 'Disease Classification(using Symptoms)',
+              description:
+                'Support our mission in protecting wildlife by donating to Wildguard360, where every contribution helps us rescue, rehabilitate, and preserve endangered species.',
+              img: img11,
+              reverse: true,
+              alt: 'Disease Classifier',
+              path:'./DiseaseClassifier'
+            },
+            {
+              title: 'Bird Classification',
+              description:
+                'Support our mission in protecting wildlife by donating to Wildguard360, where every contribution helps us rescue, rehabilitate, and preserve endangered species.',
+              img: img7,
+              alt: 'Bird CLassifier',
+              path:'./birdclassification'
+            },
+            {
+              title: 'Disease Classifier(Using Pics)',
+              description:
+                'Find the nearest animal hospitals and vets quickly with Wildguard360’s location-based services.',
+              img: img10,
+              reverse:true,
+              alt: 'DogDiseasesPic',
+              path:'./DogDiseasesPic' // External link
+            }
           ].map((service, index) => (
             <div
               className={`service ${service.reverse ? 'reverse' : ''}`}
@@ -195,19 +163,17 @@ const Service = () => {
           ))}
         </div>
       </div>
-      <div className='nature-news-container'>
+      <div className='nature-news-container bg-[#F9F7F2]'>
         <div className="content">
           <h1>NATURE NEWS</h1>
           <div className="box-container">
-            {/* <div className="box box4"></div> */}
             <div className="box box-center"><WildlifeNews /></div>
-            {/* <div className="box box3"></div> */}
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
 
 export default Service;
-

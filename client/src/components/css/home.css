@@ -42,3 +42,49 @@
   /* .info{
     background-color: lightgreen;
   } */
+
+
+  .bannerhome {
+    /* background-color: #3E64FF; */
+    color: #FFFFFF;
+    /* padding: 10px; */
+    /* margin: 30px auto; */
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sliderhome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshome {
+    display: flex;
+    width: 500%; /* 100% for each of 4 slides */
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.slidehome {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+.slidehome img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit:fill;
+}

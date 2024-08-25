@@ -1,95 +1,46 @@
-/* Login form background */
-.login-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f0f2f5;
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.full-width-img {
+    width: 100%; /* Make the image cover the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    max-height: 500px; /* Ensure the image doesn't exceed 500px in height */
+    margin: 0px;
 }
 
-/* Wrapper for the form */
-.wrapper {
-    background: #fff;
+.info-text-home {
+    background-color: #F9F7F2;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
 }
 
-/* Form header */
-/* h1 {
+.heading {
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-} */
-
-/* Input box styling */
-.input-box, .input-box2 {
-    margin-bottom: 15px;
-}
-
-.input-box input, .input-box2 input {
-    width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0E6718;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
 }
 
-.input-box input:focus, .input-box2 input:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-/* Checkbox label styling */
-.remember-forget {
-    margin-bottom: 15px;
-}
-
-.remember-forget label {
-    display: flex;
-    align-items: center;
-    color: #555;
-}
-
-.remember-forget input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-/* Button styling */
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Register link styling */
-.register-link {
+.info-text {
+    background-color: #F9F7F2;
+    padding: 20px;
+    margin: 0 10%;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
-    margin-top: 15px;
 }
 
-.register-link p {
-    color: #555;
-}
-
-.register-link a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
+@media screen and (max-width: 768px) {
+    .info-text {
+        margin: 0;
+    }
+    .info-text-home{
+      text-align: center;
+      /* padding-left:100px ; */
+    }
 }

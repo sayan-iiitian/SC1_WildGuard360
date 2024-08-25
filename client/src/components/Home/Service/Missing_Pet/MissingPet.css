@@ -1,77 +1,444 @@
-/* Import Poppins Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  /* background-color: #F0F4F8; */
-  background-color: #ECF6DB;
-  color: #333;
+/* Container */
+.containermisspet {
+  background-color: #badbdf;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
+body{
+  background-color: #F9F7F2;
+  background-image: url("Paul_updated_frontend\src\components\images\Lost Pet Finder.png");
+}
+/* Jumbotron/Header */
 .jumbotron {
-  padding: 20px;
-  background: linear-gradient(135deg, #f5f7fa, #c3e2ce);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  background: linear-gradient(135deg, #11cbba73, #2575fc);
+  color: #03413d;
+  /* padding: 60px 30px; */
+  border-radius: 16px;
   text-align: center;
 }
 
-.jumbotron h1 {
-  color: #08460e;
+.jumbotron .display-4 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.lead {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  /* margin: 0 auto; */
+  padding: 30px;
+  background-color: rgb(249, 247, 242);
+    border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.container h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #03413d;
+}
+h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
   font-weight: 600;
-}
-
-.jumbotron p {
-  color: #495b4d;
-}
-
-#main-map, #map-input {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1.5px black solid;
+  color: #495057;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .form-control {
-  border-radius: 30px;
-  padding: 10px 15px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 1.1em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-control:focus {
-  border-color: #88c9bf;
-  box-shadow: 0 0 5px rgba(136, 201, 191, 0.5);
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  box-shadow: 0 5px 15px rgba(33, 136, 56, 0.3);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+  background: linear-gradient(135deg, #007bff, #0056b3);
   border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin-top: 10px;
-  transition: all 0.3s ease;
+  color: white;
 }
 
 .btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 5px 15px rgba(0, 91, 255, 0.3);
 }
 
-.info-window {
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.img-thumbnail {
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.form-map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.smallmap p{
+  font-size: medium;
+    color: #1c4825;
+    font-weight: 600;
+    position: relative;
+
+    top: 40px;
+
+}
+.map-container {
+  flex: 1;
+  min-width: 350px;
+  height: 350px;
+  margin-right: 0; /* Removes previous margin-right */
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+    top: 50px;
 }
 
-.info-window img {
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.form-container {
+  flex: 2;
+  min-width: 400px;
 }
-.containermisspet{
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+
+#main-map, #map-input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.edit-btn, .delete-btn {
+  margin-top: 15px;
+  font-size: 1em;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Headings and Paragraphs */
+h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+p {
+  margin: 0;
+  color: #666;
+}
+.mainmissing{
+  margin: 0;
+  padding: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-map-container {
+    flex-direction: column;
+  }
+
+  .map-container, .form-container {
+    min-width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+body {
+  background-color: #F9F7F2;
+  background-image: url("Paul_updated_frontend\src\components\images\Lost Pet Finder.png");
+}
+
+.containermisspet {
+  background-color: #badbdf;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Jumbotron/Header */
+.jumbotron {
+  background: linear-gradient(135deg, #11cbba73, #2575fc);
+  color: #03413d;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.jumbotron .display-4 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.lead {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  padding: 30px;
+  background-color: rgb(249, 247, 242);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #03413d;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 1.1em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  box-shadow: 0 5px 15px rgba(33, 136, 56, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 5px 15px rgba(0, 91, 255, 0.3);
+}
+
+.img-thumbnail {
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.form-map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.smallmap p {
+  font-size: medium;
+  color: #1c4825;
+  font-weight: 600;
+  position: relative;
+  top: 40px;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 350px;
+  height: 350px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: 50px;
+}
+
+.form-container {
+  flex: 2;
+  min-width: 400px;
+}
+
+#main-map,
+#map-input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-top: 15px;
+  font-size: 1em;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Headings and Paragraphs */
+h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+p {
+  margin: 0;
+  color: #666;
+}
+
+.mainmissing {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-map-container {
+    flex-direction: column;
+  }
+
+  .map-container,
+  .form-container {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  .map-container {
+    height: 300px; /* Adjusted height for smaller screens */
+  }
+
+  .form-group label,
+  .form-control {
+    font-size: 1em; /* Slightly smaller text for mobile */
+  }
+
+  .btn {
+    padding: 10px 20px; /* Adjusted button padding for mobile */
+    font-size: 1em; /* Slightly smaller font size for buttons */
+  }
 }

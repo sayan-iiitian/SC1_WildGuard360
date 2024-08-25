@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.containerabout {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #4a5568; /* text-gray-600 equivalent */
+    /* margin-bottom:30px ; */
+  }
+.container1{
+  margin-top: 20px;
+}
+  .vision-banner {
+    border-radius: 200px;
+    background: linear-gradient(to right, white, #2bcc61);
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    /* padding: 20px; */
+  }
+  
+  .banner-image img {
+    border-radius: 150px;
+    max-width: 100%;
+    height: 175px;
+  }
+  
+  /* .vision-text{ */
+    /* color: #004c8c; Dark blue color for the text */
+    /* font-size: 2em; */
+    /* margin-left: auto;
+    padding-right:40px ;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+  } */
+  .vision-text {
+    color: #004c8c;
+    margin-left: auto;
+    padding-right: 40px;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .vision-title {
+    font-size: 2em;
+    /* text-align: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+  .vision-text p {
+    font-size: 1em; /* Default or desired size for the paragraph */
+  }
+  
+
+    .About-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    .mission-banner {
+      border-radius: 200px;
+      background: linear-gradient(to left, white, #00CCB2);
+      display: flex;
+      align-items: center;
+      margin: 30px;
+      /* padding: 20px; */
+    }
+    
+    .mission-image img {
+      border-radius: 150px;
+      max-width: 100%;
+      height: 175px;
+    }
+    
+    .mission-text{
+      color: #004c8c; /* Dark blue color for the text */
+      /* font-size: 2em; */
+      margin-right: auto;
+      padding-left:40px ;
+      font-family: "Inria Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+      text-align: left;
+
+    }
+    .mission-title {
+      font-size: 2em;
+      /* text-align: right; */
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+    .mission-text p{
+      padding: 0px;
+      font-size: 1em;
+      color: white;
+    }
+    .vision-text p{
+      padding: 0px;
+      color: white;
+    }
+  .containerabout img,video{
+    border-radius: 10px;
+  }
+  .titleabout{
+    text-align: left;
+  }
+
+.text-about-choose{
+  font-family: "Inria Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.heading{
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.thank-you{
+  font-family: "Inria Serif", serif;
+  font-weight: 600;
+  font-size: large;
+  font-style: italic;
+  color: #0E6718;
+  text-align: center;
+}
+.hd {
+  color: #238524;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
+  line-height: 60px;
+}
+
+.hd::after {
+  content: ' ';
+  background: #9d7614;
+  width: 80px;  
+  height: 3px;
+  position: absolute;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .vision-banner {
+      flex-direction: column;
+      background: linear-gradient(to bottom, white, #2bcc61);
+  }
+  .mission-banner{
+    flex-direction: column-reverse;
+    background: linear-gradient(to bottom, white, #00CCB2);
+    margin: 30px;
+    padding: 20px;
+  }
+  .vision-text, .mission-text {
+      text-align: center;
+      padding: 20px;
+  }
+
+  /* .vision-text, .mission-text {
+      font-size: 1.5em; 
+  } */
+  
+  .vision-banner .banner-image img, .mission-banner .mission-image img {
+      height: auto;
+  }
+
+  .space-y-6 {
+      flex-direction: column;
+  }
+
+  .containerabout, .container1 {
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+
+  .About-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  .whychoose .hd {
+      text-align: center;
+  }
+
+  .text-about-choose p {
+      text-align: center;
+  }
+}
